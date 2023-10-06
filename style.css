@@ -32,7 +32,7 @@
     
     .cabecalho__menu-item{
         font-size: 32px;
-        color:#73bef3
+        color:#f7f8f9
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
         display: inline;
@@ -42,7 +42,7 @@
     .escola{
         margin: 20px;
         padding: 20px;
-        background-color:#65c7f1;
+        background-color:#f2f5f6;
         display: flex;
         justify-content: center;
         align-items: center;

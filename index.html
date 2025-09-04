@@ -1,100 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Site colégio </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BetMaster Funcional</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header class="cabecalho">
+  <header>
+    <div class="logo">BetMaster</div>
+    <div class="user-actions">
+      <button id="google-login" class="btn google">
+        <img src="https://www.svgrepo.com/show/355037/google.svg" alt="Google" class="google-icon">
+        Entrar com Google
+      </button>
+      <button id="logout" class="btn logout" style="display:none;">Sair</button>
+      <div id="balance-panel" style="display:none;">Saldo: R$ <span id="balance">0</span></div>
+    </div>
+  </header>
 
-        <h1 class="cabecalho__titulo"><img class="cabecalho__imagem" src="img/WhatsApp Image 2023-09-29 at 08.56.52.jpeg""Caue"></h1>
+  <main>
+    <section class="matches" id="futebol">
+      <h2>Futebol - Ao Vivo</h2>
+      <div class="match-card" data-match="flamengo-palmeiras">
+        <div class="teams"><span>Flamengo</span> <span>X</span> <span>Palmeiras</span></div>
+        <div class="odds">
+          <button class="odd">1.85</button>
+          <button class="odd">3.20</button>
+          <button class="odd">2.10</button>
+        </div>
+      </div>
+      <div class="match-card" data-match="barcelona-real">
+        <div class="teams"><span>Barcelona</span> <span>X</span> <span>Real Madrid</span></div>
+        <div class="odds">
+          <button class="odd">2.00</button>
+          <button class="odd">3.50</button>
+          <button class="odd">2.40</button>
+        </div>
+      </div>
+    </section>
 
-        <ul class="cabecalho__menu">
-            <li class="cabecalho__menu-item"> Sobre</li>
-            <li class="cabecalho__menu-item"> colégio</li>
-          </ul>Grandes rios PR</ul>
+    <section class="casino-games">
+      <h2>Jogos de Cassino</h2>
+      <div class="game-grid">
+        <div class="game-card" data-game="tigrinho">
+          <img src="https://via.placeholder.com/100?text=Tigrinho" alt="Tigrinho">
+          <p>Tigrinho</p>
+          <button class="play-btn">Jogar</button>
+        </div>
+        <div class="game-card" data-game="roleta">
+          <img src="https://via.placeholder.com/100?text=Roleta" alt="Roleta">
+          <p>Roleta</p>
+          <button class="play-btn">Jogar</button>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    </header>
-    <main>
-        <section class="escola">
-            <div class="escola__div">
-                <h2 class="escola__titulo"> Escola Estadual comendador geremias lunardelli </h2>
-                <p class="escola__paragrafo">
-                    </p>
-            </div>
-            <img class="img/12230508995_7c9bb7e586_o.jpg" src="img/12230508995_f34718cfa5_w.jpg" alt="foto da escola estadual do campo cerrado das cinzas">
+  <footer>
+    <p>© 2025 BetMaster - Protótipo funcional, sem apostas reais</p>
+  </footer>
 
-        </section>
-        <section class="professores">
-            
-            <div class="professores__div">
-                <img class="aluno_div-imagem" src="img img/WhatsApp Image 2023-09-29 at 08.56.52.jpeg" alt="foto do professor">
-                <h3 class="professores__div-titulo">Franciele Pastori</h3>
-                <p class="professores__div-paragrafo">Física|Matemática</p>
-            </div>
-            <div class="professores__div">
-                <img class="professores__div-imagem" src="avatar.jpeg" alt="foto do professor">
-                <h3 class="professores__div-titulo">Franciele Pastori</h3>
-                <p class="professores__div-paragrafo">Física|Matemática</p>
-            </div>
-            <div class="professores__div">
-                <img class="professores__div-imagem" src="avatar.jpeg" alt="foto do professor">
-                <h3 class="professores__div-titulo">Franciele Pastori</h3>
-                <p class="professores__div-paragrafo">Física|Matemática</p>
-            </div>
-            <div class="professores__div">
-                <img class="professores__div-imagem" src="avatar.jpeg" alt="foto do professor">
-                <h3 class="professores__div-titulo">Franciele Pastori</h3>
-                <p class="professores__div-paragrafo">Física|Matemática</p>
-            </div>
-            <div class="professores__div">
-                <img class="professores__div-imagem" src="avatar.jpeg" alt="foto do professor">
-                <h3 class="professores__div-titulo">Franciele Pastori</h3>
-                <p class="professores__div-paragrafo">Física|Matemática</p>
-            </div>
-            <div class="professores__div">
-                <img class="professores__div-imagem" src="avatar.jpeg" alt="foto do professor">
-                <h3 class="professores__div-titulo">Franciele Pastori</h3>
-                <p class="professores__div-paragrafo">Física|Matemática</p>
-            </div>
-            <div class="professores__div">
-                <img class="professores__div-imagem" src="avatar.jpeg" alt="foto do professor">
-                <h3 class="professores__div-titulo">Franciele Pastori</h3>
-                <p class="professores__div-paragrafo">Física|Matemática</p>
-            </div>
-            <div class="professores__div">
-                <img class="professores__div-imagem" src="avatar.jpeg" alt="foto do professor">
-                <h3 class="professores__div-titulo">Franciele Pastori</h3>
-                <p class="professores__div-paragrafo">Física|Matemática</p>
-            </div>
-            <div class="professores__div">
-                <img class="professores__div-imagem" src="avatar.jpeg" alt="foto do professor">
-                <h3 class="professores__div-titulo">Franciele Pastori</h3>
-                <p class="professores__div-paragrafo">Física|Matemática</p>
-            </div>
-            <div class="professores__div">
-                <img class="professores__div-imagem" src="avatar.jpeg" alt="foto do professor">
-                <h3 class="professores__div-titulo">Franciele Pastori</h3>
-                <p class="professores__div-paragrafo">Física|Matemática</p>
-            </div>
-
-
-        </section>
-
-
-    </main>
-    <footer>
-
-
-    </footer>
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js"></script>
+  <script src="app.js"></script>
 </body>
-
 </html>
